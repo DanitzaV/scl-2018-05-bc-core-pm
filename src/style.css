@@ -1,1 +1,15 @@
 /* Acá va tu código */
+/* input*/
+#cipher{
+    width: 35em;
+    height: 20em;
+    letter-spacing: 1px;
+    resize: none;
+}
+/* botones */
+.btncipher{
+    position: relative;
+    top: 6em;
+    right: 23em;
+    padding: 1em 3em 1em 3em;
+}
