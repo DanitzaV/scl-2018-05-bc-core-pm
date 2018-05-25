@@ -5,17 +5,27 @@
     height: 20em;
     letter-spacing: 1px;
     resize: none;
+    float: left;
 }
 /* botones */
-.btncipher{
-    position: relative;
-    top: 6em;
-    right: 23em;
-    padding: 1em 3em 1em 3em;
+.btnEncode{
+    margin-top: 130%;
+} 
+.btnDecode{
+    margin-top: 50%;
 }
+.contBtn{
+    display: inline-grid;
+    margin-left: 3%;
+}
+
 /*CONTENEDOR DE palabras cifradas y descrifradas*/
 /* #containerCC{
      
 } */
+.containersCC{
+    float: right;
+    margin-right: 20%;
+}
 
 

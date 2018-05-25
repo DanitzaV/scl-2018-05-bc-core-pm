@@ -1,30 +1,31 @@
 window.cipher = {
 
-  encode: (offset,string) => {
+  encode: (string,offset) => {
     /* Acá va tu código */
-   
-    let text = document.getElementById('cipher').value;
+    string = document.getElementById('cipher').value;
     offset = 33;
-    string = text;
-    let cifradas = '';
+    let cifradas = "";
+    
     for (let i = 0; i < string.length; i++) {
-      let formula = (string.toUpperCase().charCodeAt(i) - 65 + offset) % 26 + 65;
-      let cifrado = String.fromCharCode(formula);
+      const formula = (string.toUpperCase().charCodeAt(i) - 65 + offset) % 26 + 65;
+      const cifrado = String.fromCharCode(formula);
       cifradas+= cifrado;
+      
     }
-    document.getElementById('containerCC').innerHTML = '<p>'+ cifradas + '</p>';
+    console.log(cifradas);
+   const contenedor = document.getElementById('containerCC').innerHTML = '<p>'+ cifradas + '</p>';
   },
-  decode: () => {
+
+  decode: (string,offset) => {
     /* Acá va tu código */
-    let textDe = document.getElementById('cipher').value;
+    string= document.getElementById('cipher').value;
     offset = 33;
-    string = textDe;
-    let cifradasDecode = '';
+    let descrifradas = "";
     for (let j = 0; j < string.length; j++) {
-      let formula = (string.toUpperCase().charCodeAt(j) + 65 - offset) % 26 + 65;
-      let cifrado = String.fromCharCode(formula);
-      cifradasDecode+= cifrado;
+      const formula = (string.toUpperCase().charCodeAt(j) + 65 - offset) % 26 + 65;
+      const cifrado = String.fromCharCode(formula);
+      descrifradas+= cifrado;
   }
-  document.getElementById('containerDC').innerHTML = '<p>' + cifradasDecode + '</p>';
+  const contenedor= document.getElementById('containerCC').innerHTML = '<p>' + descrifradas + '</p>';
 }
 }
