@@ -7,12 +7,17 @@
 </head>
 <body>
 
-  <div id="root"></div>
-    <textarea id="cipher"></textarea>
-  <button onclick=cipher.encode() class="btncipher">cifrar</button>
-  <button onclick="cipher.decode()">Descifrar</button>
-  <div id="containerCC"></div>
-  <div id="containerDC"></div>
+  <div id="root">
+    
+  </div>
+  <textarea id="cipher"></textarea>
+    <div class="contBtn">
+      <button onclick="cipher.encode()" class="btnEncode">cifrar</button>
+      <button onclick="cipher.decode()" class="btnDecode">Descifrar</button>
+    </div>
+    
+    <div class="containersCC" id="containerCC"></div>
+    
   <script src="cipher.js"></script>
   <script src="index.js"></script>
 </body>
