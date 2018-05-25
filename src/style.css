@@ -1,27 +1,71 @@
 /* Acá va tu código */
 /* input*/
+body{
+    background-color: #bad7df;
+}
+#root h1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    animation-name: title;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    font-size: 47px;
+}
+@keyframes title {
+    0%   {color:rgb(81, 81, 240); }
+    25%  { }
+    50%  {color: #f1adad; }
+    75%  {}
+    100% {color:rgb(92, 92, 240); }
+}
 #cipher{
     overflow-y: scroll;
     overflow-x: auto;
     box-sizing: border-box;
     height: auto;
     padding-bottom: 16%;
+    margin-left: 25px;
     width: 35%;
     direction: ltr;
     letter-spacing: 1px;
     resize: none;
     float: left;
+    border: none;
 }
 /* botones */
 .btnEncode{
     margin-top: 130%;
+    margin-bottom: 40px !important;
+    box-shadow: 5px 5px 5px rgb(128, 128, 128);
+    border: none;
+    border-radius: 2px;
+    color: white;
+    background-color: #99ddcc;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 4px 5px;
+    cursor: pointer;
 } 
 .btnDecode{
     margin-top: 50%;
+    box-shadow: 5px 5px 5px rgb(128, 128, 128);
+    border: none;
+    border-radius: 2px;
+    color: white;
+    background-color: #99ddcc;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 4px 5px;
+    cursor: pointer;
 }
 .contBtn{
     display: inline-grid;
     margin-left: 3%;
+    margin-top: 70px;
 }
 
 /*CONTENEDOR DE palabras cifradas y descrifradas*/
@@ -30,7 +74,16 @@
 } */
 .containersCC{
     float: right;
-    margin-right: 20%;
+    margin-right: 10%;
+    width: 500px;
+    height: 250px;
+    background-color: #f1adad;
+    padding: 2px 9px 2px 9px;
+    /* padding-bottom: 180px; */
+    word-break: break-all;
+    word-wrap: break-word;
+    overflow-y: scroll;
+
 }
 
 
