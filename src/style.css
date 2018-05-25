@@ -1,8 +1,13 @@
 /* Acá va tu código */
 /* input*/
 #cipher{
-    width: 35em;
-    height: 20em;
+    overflow-y: scroll;
+    overflow-x: auto;
+    box-sizing: border-box;
+    height: auto;
+    padding-bottom: 16%;
+    width: 35%;
+    direction: ltr;
     letter-spacing: 1px;
     resize: none;
     float: left;
