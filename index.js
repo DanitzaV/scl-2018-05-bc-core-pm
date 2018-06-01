@@ -1,7 +1,9 @@
 
-let string1 = document.getElementById('cipher').value;
-let offset1 = document.getElementById('number').value;
+let string1 = document.getElementById('cipher');
+let offset1 = document.getElementById('number');
 
-document.getElementById("cifrar").addEventListener('click', function(){
-    document.getElementById('containerCC').innerHTML = window.cipher.encode(string1.toUpperCase(),parseInt(offset1));
-})
+
+function cifrar() {
+    document.getElementById('containerCC').innerHTML = window.cipher.encode(string1.value,parseInt(offset1.value));
+    console.log('a qui estoy')
+}
