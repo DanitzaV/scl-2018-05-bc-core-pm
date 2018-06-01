@@ -15,10 +15,7 @@ window.cipher = {
       }
       const cifrado = String.fromCharCode(formula);
       cifradas+= cifrado;
-
-      
     }
-
     return cifradas;
   } ,
    
@@ -29,7 +26,7 @@ window.cipher = {
       let formula = (string.toUpperCase().charCodeAt(j) + 65 - offset) % 26 + 65;
       if (string.charCodeAt(j) === 32) {
         formula = ' ';// contiene los espacios
-        cifradas+= " ";// pone en la frase los espacios
+        cifradas+= ' ';// pone en la frase los espacios
         console.log(formula)
         console.log(cifradas);
       }
@@ -37,6 +34,11 @@ window.cipher = {
       descrifradas+= cifrado;
   }
   return descrifradas;
-}
+},
+// createCipherWithOffset(offset){
+   
+// }
+
 
 }
+
