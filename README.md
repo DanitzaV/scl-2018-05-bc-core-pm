@@ -11,7 +11,7 @@ Un gran problema es que pones tu alarma para levantarte temprano, sin embargo
 y "de casualidad" revisando tus mensajes. Debido a que es algo sorpresa, decides
 crear una aplicación que te permita enviar mensajes cifrados y que las demás
 personas (partícipes de la fiesta) puedan tener una interfaz para
-descifrarlo. Así que ahora te toca aplicar tus superpoderes 😎
+descifrarlo. Así que ahora te toca aplicar tus superpoderes 😎.
 
 ## Introducción
 
