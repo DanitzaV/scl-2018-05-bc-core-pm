@@ -1,11 +1,11 @@
 
-let string1 = document.getElementById('cipher');
-let offset1 = document.getElementById('number');
+let string = document.getElementById('cipher');
+let offset = document.getElementById('number');
 
 
 function cifrar() {
-    document.getElementById('containerCC').innerHTML = window.cipher.encode(string1.value,parseInt(offset1.value));
+    document.getElementById('containerCC').innerHTML = window.cipher.encode(string.value,parseInt(offset.value));
 }
 function decode() {
-    document.getElementById('containerCC').innerHTML = window.cipher.encode(string1.value,parseInt(offset1.value));
+    document.getElementById('containerCC').innerHTML = window.cipher.decode(string.value,parseInt(offset.value));
 }
