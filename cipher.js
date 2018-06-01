@@ -27,7 +27,7 @@ window.cipher = {
     let descrifradas = "";
     for (let j = 0; j < string.length; j++) {
       let formula = (string.toUpperCase().charCodeAt(j) + 65 - offset) % 26 + 65;
-      if (string.charCodeAt(i) === 32) {
+      if (string.charCodeAt(j) === 32) {
         formula = ' ';// contiene los espacios
         cifradas+= " ";// pone en la frase los espacios
         console.log(formula)
@@ -36,7 +36,7 @@ window.cipher = {
       const cifrado = String.fromCharCode(formula);
       descrifradas+= cifrado;
   }
-  
+  return descrifradas;
 }
 
 }
