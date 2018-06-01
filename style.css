@@ -31,6 +31,7 @@ body{
     resize: none;
     float: left;
     border: none;
+    margin-top: 45px;
 }
 /* botones */
 .btnEncode{
@@ -39,10 +40,11 @@ body{
     box-shadow: 5px 5px 5px rgb(128, 128, 128);
     border: none;
     border-radius: 2px;
-    color: white;
+    color: #0083a7;
     background-color: #99ddcc;
     text-align: center;
     display: inline-block;
+    padding: 5px;
     font-size: 20px;
     font-weight: bold;
     margin: 4px 5px;
@@ -52,8 +54,9 @@ body{
     margin-top: 50%;
     box-shadow: 5px 5px 5px rgb(128, 128, 128);
     border: none;
+    padding: 5px;
     border-radius: 2px;
-    color: white;
+    color: #0083a7;
     background-color: #99ddcc;
     text-align: center;
     display: inline-block;
@@ -65,7 +68,7 @@ body{
 .contBtn{
     display: inline-grid;
     margin-left: 3%;
-    margin-top: 70px;
+    margin-top: 150px;
 }
 
 /*CONTENEDOR DE palabras cifradas y descrifradas*/
@@ -74,7 +77,7 @@ body{
 } */
 .containersCC{
     float: right;
-    margin-right: 10%;
+    margin-right: 2%;
     width: 500px;
     height: 250px;
     background-color: #f1adad;
@@ -83,7 +86,29 @@ body{
     word-break: break-all;
     word-wrap: break-word;
     overflow-y: scroll;
+    margin-top: 55px;
 
+}
+.textoCipher {
+    position: relative;
+    /* bottom: 225px; */
+    left: 900px;
+    font-family: cursive;
+    font-size: 25px;
+    width: 400px;
+    bottom: 270px;
+    /* text-align: center; */
+}
+.intro{
+    font-family: cursive;
+}
+#number {
+    width: 3%;
+    height: 25px;
+    /* margin-top: 20px !important; */
+    position: relative;
+    bottom: 80px;
+    left: 9%;
 }
 
 

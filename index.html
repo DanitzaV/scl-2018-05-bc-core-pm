@@ -9,13 +9,14 @@
 
   <div id="root">
     <h1>CIFRADO CESAR</h1>
-    <textarea id="cipher"></textarea>
+    <!-- <p class="intro">Introduce las palabras :D</p> -->
+    <textarea id="cipher"></textarea> <input type="number" name="" id="number" min="0" max="33">
     <div class="contBtn">
-      <button onclick="cipher.encode()" class="btnEncode">cifrar</button>
-      <button onclick="cipher.decode()" class="btnDecode">Descifrar</button>
+      <button id="cifrar" class="btnEncode">cifrar</button>
+      <button onclick="decode()" class="btnDecode">Descifrar</button>
     </div>
-    
     <div class="containersCC" id="containerCC"></div>
+    <p class="textoCipher">Palabras  Cifradas! Wuala..</p>
   </div >
   
   
